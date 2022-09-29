@@ -30,3 +30,16 @@ for index in range(6):
         identicalThrows += 1
 print(identicalThrows)
 ```
+### Assignment 3:
+```py
+numbers = []
+
+for index in range(10):
+    numbers.append(int(input("Enter a digit: ")))
+for index in range(10):
+    appearences = 0
+    for iteration in range(9):
+        if numbers[iteration] == index:
+            appearences += 1
+    print("Appearences for number {} are: {}".format(index, appearences))
+    ```
