@@ -42,4 +42,21 @@ for index in range(10):
         if numbers[iteration] == index:
             appearences += 1
     print("Appearences for number {} are: {}".format(index, appearences))
-    ```
+```
+```py
+numbers = []
+
+for index in range(15):
+    numbers.append(int(input("Enter a digit: ")))
+maxappearences = 0
+appearednumber = 0
+for index in range(10):
+    appearences = 0
+    for iteration in range(9):
+        if numbers[iteration] == index:
+            appearences += 1
+    if (appearences > maxappearences):
+        maxappearences = appearences
+        appearednumber = index
+print("number {} has appeared: {} times".format(appearednumber, maxappearences))
+```
